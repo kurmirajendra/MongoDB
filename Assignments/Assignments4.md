@@ -21,26 +21,32 @@ db.Course.insertMany([
   modules: ["HTML","CSS","Java Script"],
   instructors: ["Sir","MaM"]
 },
+
+
 {
   courseName: "Web Development",
   modules: ["CSS","HTML","Java Script"],
   instructors: ["Mam","Sir"]
 },
+
 {
   courseName: "Full Stack Development",
   modules: ["Java Script","HTML","CSS"],
   instructors: ["Sir"]
 },
+
 {
   courseName: "Full Stack Development",
   modules: ["Java","CSS","HTML","NodeJS"],
   instructors: ["SIR","MAM"]
 },
+
 {
   courseName: "BackEnd Development",
   modules: ["MongoDB","NodeJS"],
   instructors: ["Sir"]
 }
+
 ])
 
 ------------------------------------------------------------
@@ -69,31 +75,42 @@ db.developers.insertMany([
   skills: ["MongoDB","React","NodeJs","Spring Boot"],
   certifications: ["Orcale"]
 },
+
 {
   name: "Veer",
   skills: ["Spring Boot","Python","MongoDB","React","NodeJs","Orcale"],
   certifications: ["Orcale","Azure"]
 },
+
+
 {
   name: "Rajendra",
   skills: ["Orcale","MongoDB","React","NodeJs","Sprint Boot"],
   certifications: ["AWS"]
 },
+
+
 {
   name: "Vinod",
   skills: ["Spring Boot","Orcale","Java"],
   certifications: ["Orcale"]
 },
+
+
 {
   name: "Muskan",
   skills: ["MongoDB","NodeJs","Spring Boot"],
   certifications: ["Azure"]
 },
+
+
 {
   name: "Vaishnavi",
   skills: ["MongoDB","NodeJs","HTML"],
   certifications: ["AWS"]
 }
+
+
 ])
 
 ------------------------------------------------------------
@@ -121,49 +138,65 @@ db.createCollection("students")
 db.students.insertMany([
 {
   name: "Rahul",
+
   subjects: [
     {name:"Math",marks:83,attempts:1},
     {name:"Science",marks:78,attempts:2},
     {name:"English",marks:65,attempts:1}
   ]
+
 },
+
+
 {
   name: "Vinod",
+
   subjects: [
     {name:"Math",marks:82,attempts:2},
     {name:"Science",marks:75,attempts:1},
     {name:"Hindi",marks:89,attempts:1}
   ]
+
 },
+
+
 {
   name: "Vaishnavi",
+
   subjects: [
     {name:"Math",marks:78,attempts:1}
   ]
+
 },
 {
   name: "Abhay",
+
   subjects: [
     {name:"Math",marks:85,attempts:1},
     {name:"Science",marks:73,attempts:2},
     {name:"English",marks:68,attempts:1}
   ]
+
 },
 {
   name: "Umesh",
+
   subjects: [
     {name:"Math",marks:75,attempts:2},
     {name:"Science",marks:65,attempts:1},
     {name:"Hindi",marks:89,attempts:1}
   ]
+
 },
 {
   name: "Dev",
+
   subjects: [
     {name:"Math",marks:80,attempts:1},
     {name:"Science",marks:85,attempts:2},
     {name:"English",marks:86,attempts:1}
   ]
+
 }
 ])
 
@@ -202,24 +235,38 @@ db.createCollection("teams")
 db.teams.insertMany([
 {
   teamName: "GodLike",
+
   members: ["Krishna","Rahul","Pankaj","Mohit Bhaiya","Anuraj","Rohan","Abhay"]
+
 },
+
 {
   teamName: "Glorix",
+
   members: ["Veer","Umesh","Gargi","Astha Didi","Muskan S","Muskan","Veerendra"]
+
 },
+
 {
   teamName: "Dominators",
+
   members: ["Me","Vaishnavi","Ashwin","Aadrash","Shivam Bhaiya","Yasika"]
 },
+
 {
   teamName: "RO-KO",
+
   members: ["Veer","Krishna","Rajendra"]
+
 },
+
 {
   teamName: "Matrix",
+
   members: ["Dev","Parth","Sakshi"]
+
 }
+
 ])
 
 ------------------------------------------------------------
@@ -243,8 +290,11 @@ db.teams.find({
 # 1️⃣3️⃣ Insert Team "Cheeta"
 
 db.teams.insertOne({
+
   teamName: "Cheeta",
+
   members: ["Rahul","Amit","Sneha","Karan"]
+  
 })
 
 ------------------------------------------------------------
